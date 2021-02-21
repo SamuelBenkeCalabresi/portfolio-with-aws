@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Hello AWS</h1>
+      <h1>Hello AWS Amplify</h1>
     </div>
   );
 }
