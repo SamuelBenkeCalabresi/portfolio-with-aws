@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "portfoliowithawseb68118d": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
