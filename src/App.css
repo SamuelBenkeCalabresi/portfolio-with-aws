@@ -3,7 +3,7 @@
 
 .App {
   text-align: center;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -11,4 +11,59 @@
   font-weight: 700;
   font-style: italic;
   color: rgb(237, 39, 39);
+}
+
+.header_our_love {
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+.navigation_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.becetti_list {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.link {
+  list-style-type: none;
+}
+
+.link + .link {
+  padding-left: 10px;
+}
+
+a:link {
+  color: rgb(40, 43, 238);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(40, 43, 238);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(113, 115, 216);
+}
+
+a:active {
+  color: rgb(113, 115, 216);
+}
+
+.background_image {
+  background-image: url("./assets/images/universe2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
 }
