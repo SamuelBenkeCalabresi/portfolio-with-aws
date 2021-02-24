@@ -1,4 +1,6 @@
 import './App.css';
+import styles from './styles/Home.module.css'
+import heartIcon from './assets/images/heart.svg';
 
 import {
   BrowserRouter as Router,
@@ -61,6 +63,7 @@ function About() {
           <li>Washing machine</li>
           <li>Fish becetto</li>
           <li>Vacuum cleaner becetto</li>
+          <li>Ice cream becetto</li>
           <ul></ul>
         </ul>
       </div>
@@ -69,17 +72,69 @@ function About() {
 }
 
 function Users() {
-  return <h2>So many beautiful things to do with you, from glazing into your eyes to travel all over..</h2>;
+  return (
+    <div className={styles.container}>
+
+    <main className={styles.main}>
+      <h1 className={styles.title}>
+        Samuel Benke Calabresi.
+      </h1>
+
+      <p className={styles.description}>
+        Personal {' '}
+        <code className={styles.code}>frontend portfolio</code>
+      </p>
+
+      <div className={styles.grid}>
+        <a 
+         href="https://adoring-wilson-a13eb5.netlify.app/"
+         target="_blank"
+         rel="noopener noreferrer"
+         className={styles.card}>
+          <h3>Social network Instagram clone web app &rarr;</h3>
+          <p>Social network React and Redux app</p>
+        </a>
+
+        <a 
+         href="https://kind-jennings-e85dca.netlify.app/"
+         target="_blank"
+         rel="noopener noreferrer"
+         className={styles.card}>
+          <h3>Ecommerce Amazon clone web app &rarr;</h3>
+          <p>Ecommerce Stripes based React app</p>
+        </a>
+
+        <a
+          href="https://sharp-pasteur-f7ba47.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.card}
+        >
+          <h3>Quiz App &rarr;</h3>
+          <p>Simple Typescript porject using free Quiz API</p>
+        </a>
+
+        <a
+          href="https://elegant-cray-743e65.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.card}
+        >
+          <h3>Task app Todoist clone &rarr;</h3>
+          <p>
+            Task React and Redux app
+          </p>
+        </a>
+      </div>
+    </main>
+
+    <footer className={styles.footer}>
+      <Link to="/#">
+        Made with
+        <img src={heartIcon} alt="Heart Icon" className={styles.footerIcon} />
+        by me      
+      </Link>
+    </footer>
+  </div>
+  );
 }
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Header/>
-//       <h1 className="header">I love you babe..</h1>
-//       <h1 className="header">🥠 ❤️ 🥠</h1>
-//     </div>
-//   );
-// }
-
-// export default App;
