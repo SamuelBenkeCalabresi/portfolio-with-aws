@@ -54,7 +54,12 @@
   font-size: 4rem;
 }
 
+.pageTitle {
+  font-size: 1.5rem;
+}
+
 .title,
+.pageTitle,
 .description {
   text-align: center;
 }
@@ -118,6 +123,29 @@
 
 .footerIcon {
   height: 1.5em;
+}
+
+.socialNetworksContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.socialIconLink + .socialIconLink {
+  padding-left: 50px;
+}
+
+.socialIcon {
+  /* color: #333333; */
+  color: black;
+  transition: color 0.15s ease;
+}
+
+.socialIcon:hover,
+.socialIcon:focus,
+.socialIcon:active {
+  color: #4d4d4d;
 }
 
 @media (max-width: 600px) {
